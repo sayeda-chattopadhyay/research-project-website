@@ -17,7 +17,7 @@ function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/research" element={<ResearchPage />} />
-      <Route path="/research/:researchId" element={<ResearchDetails />} />
+      <Route path="/researchDetails/:projectId" element={<ResearchDetails />} />
       <Route path="/publications" element={<PublicationsPage />} />
       <Route path="/news" element={<NewsAndUpdatePage />} />
       <Route path="*" element={<NotFoundPage />} />
