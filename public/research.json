@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Project 1",
+    "description": "Description for Project 1",
+    "language": {
+      "en": {
+        "title": "Project 1",
+        "description": "Description for Project 1 in English"
+      },
+      "fr": {
+        "title": "Projet 1",
+        "description": "Description du Projet 1 en français"
+      }
+    }
+  },
+  {
+    "id": 2,
+    "title": "Project 2",
+    "description": "Description for Project 2",
+    "language": {
+      "en": {
+        "title": "Project 2",
+        "description": "Description for Project 2 in English"
+      },
+      "fr": {
+        "title": "Projet 2",
+        "description": "Description du Projet 2 en français"
+      }
+    }
+  }
+]
