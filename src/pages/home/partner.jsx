@@ -1,7 +1,9 @@
 
 const PartnerSection = () => {
   return (
-    <div>partner</div>
+    <div>
+      <h2>Our Research partner</h2>
+    </div>
   )
 }
 

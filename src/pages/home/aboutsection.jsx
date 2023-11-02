@@ -6,12 +6,11 @@ const AboutSection = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    alert(" go to about us page");
     navigate("/about");
   };
 
   return (
-    <div className="mt-20 p-4 md:p-8 lg:p-12 flex flex-col md:flex-row gap-8">
+    <div className="mt-10 mb-20 p-4 md:p-8 lg:p-12 flex flex-col md:flex-row gap-8 max-w-[1440px] mx-auto text-center">
       {/* image */}
       <div className="md:w-1/2 mt-4 md:mt-0">
         <img
@@ -22,7 +21,7 @@ const AboutSection = () => {
       </div>
       {/* text */}
       <div className="md:w-1/2 text-start md:pr-8">
-        <h1 className="text-Raleway text-3xl font-bold mb-4">Know About us</h1>
+        <h2 className="text-Raleway text-3xl font-bold mb-4">Know About us</h2>
         <p className="text-roboto text-lg text-gray-700 leading-relaxed max-w-xl mb-8">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry standard dummy text ever
