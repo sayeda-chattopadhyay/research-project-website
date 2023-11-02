@@ -1,7 +1,6 @@
-
-
-import  { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
+import Logo from "./logo";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -11,8 +10,14 @@ const Navbar = () => {
   };
 
   return (
-    <div className={`flex justify-between items-center p-4 bg-gray-800 text-white ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
-      <div className="font-bold">Your Logo</div>
+    <div
+      className={`flex justify-between items-center p-4 bg-gray-800 text-white ${
+        isMobileMenuOpen ? "mobile-menu-open" : ""
+      }`}
+    >
+      <div className="font-bold">
+        <Logo />
+      </div>
 
       <div className="hidden md:flex">
         <NavLink to="/" exact className="text-white hover:text-gray-300 mx-2">
@@ -24,7 +29,10 @@ const Navbar = () => {
         <NavLink to="/research" className="text-white hover:text-gray-300 mx-2">
           Research
         </NavLink>
-        <NavLink to="/publications" className="text-white hover:text-gray-300 mx-2">
+        <NavLink
+          to="/publications"
+          className="text-white hover:text-gray-300 mx-2"
+        >
           Publications
         </NavLink>
         <NavLink to="/team" className="text-white hover:text-gray-300 mx-2">
@@ -34,7 +42,10 @@ const Navbar = () => {
 
       <div className="mr-2">Language</div>
 
-      <div className="md:hidden cursor-pointer text-2xl" onClick={toggleMobileMenu}>
+      <div
+        className="md:hidden cursor-pointer text-2xl"
+        onClick={toggleMobileMenu}
+      >
         ☰
       </div>
 
@@ -43,19 +54,40 @@ const Navbar = () => {
           <div onClick={toggleMobileMenu} className="text-white text-right p-2">
             ✖
           </div>
-          <NavLink to="/" exact onClick={toggleMobileMenu} className="text-white p-2">
+          <NavLink
+            to="/"
+            exact
+            onClick={toggleMobileMenu}
+            className="text-white p-2"
+          >
             Home
           </NavLink>
-          <NavLink to="/about" onClick={toggleMobileMenu} className="text-white p-2">
+          <NavLink
+            to="/about"
+            onClick={toggleMobileMenu}
+            className="text-white p-2"
+          >
             About
           </NavLink>
-          <NavLink to="/research" onClick={toggleMobileMenu} className="text-white p-2">
+          <NavLink
+            to="/research"
+            onClick={toggleMobileMenu}
+            className="text-white p-2"
+          >
             Research
           </NavLink>
-          <NavLink to="/publications" onClick={toggleMobileMenu} className="text-white p-2">
+          <NavLink
+            to="/publications"
+            onClick={toggleMobileMenu}
+            className="text-white p-2"
+          >
             Publications
           </NavLink>
-          <NavLink to="/team" onClick={toggleMobileMenu} className="text-white p-2">
+          <NavLink
+            to="/team"
+            onClick={toggleMobileMenu}
+            className="text-white p-2"
+          >
             Team
           </NavLink>
         </div>
