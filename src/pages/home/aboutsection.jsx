@@ -1,6 +1,15 @@
 import aboutUs from "../../assets/images/aboutus.jpg";
+import Button from "../../components/buttons/button";
+import { useNavigate } from "react-router-dom";
 
 const AboutSection = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    alert(" go to about us page");
+    navigate("/about");
+  };
+
   return (
     <div className="mt-20 p-4 md:p-8 lg:p-12 flex flex-col md:flex-row gap-8">
       {/* image */}
@@ -22,9 +31,7 @@ const AboutSection = () => {
           five centuries, but also the leap into electronic typesetting,
           remaining essentially unchanged.
         </p>
-        <button className="border-2 px-4 py-2 rounded-md bg-[#003d66] text-white/90 ">
-          About Us
-        </button>
+        <Button text="About Us" className="mt-4" onClick={handleClick} />
       </div>
     </div>
   );
