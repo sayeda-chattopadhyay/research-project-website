@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Reseach 1",
-    "image": "src/assets/images/aboutus.jpg",
+    "image": "/images/aboutus.jpg",
     "description": "Description for Research 1",
     "language": {
       "en": {
@@ -18,7 +18,7 @@
   {
     "id": 2,
     "title": "Research 2",
-    "image": "src/assets/images/aboutus.jpg",
+    "image": "/images/aboutus.jpg",
     "description": "Description for Research 2",
     "language": {
       "en": {
@@ -34,7 +34,7 @@
   {
     "id": 3,
     "title": "Research 3",
-    "image": "src/assets/images/aboutus.jpg",
+    "image": "/images/aboutus.jpg",
     "description": "Description for Research 3",
     "language": {
       "en": {

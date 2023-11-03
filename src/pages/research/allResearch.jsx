@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
@@ -36,7 +35,7 @@ const AllResearch = () => {
 
   // Render your projects in the component
   return (
-    <div className="mt-10">   
+    <div className="mt-10">
       {loading ? (
         <p>Loading...</p>
       ) : error ? (
@@ -50,12 +49,14 @@ const AllResearch = () => {
             >
               <Link to={`/researchDetails/${researchItem.id}`}>
                 <img
-                  src={researchItem.image} // Add the correct property for the image URL
+                  src={researchItem.image}
                   alt={researchItem.title}
                   className="w-full h-40 object-cover"
                 />
                 <div className="p-4">
-                  <h2 className="text-xl font-bold mb-2">{researchItem.title}</h2>
+                  <h2 className="text-xl font-bold mb-2">
+                    {researchItem.title}
+                  </h2>
                   <p className="text-gray-700">{researchItem.description}</p>
                 </div>
               </Link>
@@ -68,4 +69,3 @@ const AllResearch = () => {
 };
 
 export default AllResearch;
-
