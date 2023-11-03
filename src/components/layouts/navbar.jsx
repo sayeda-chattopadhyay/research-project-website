@@ -21,7 +21,7 @@ const Navbar = () => {
       </NavLink>
       {/* desktop navbar */}
       <div className="hidden md:flex">
-        <NavLink to="/" exact className="text-white hover:text-gray-300 mx-3">
+        <NavLink to="/" className="text-white hover:text-gray-300 mx-3">
           Home
         </NavLink>
         <NavLink to="/about" className="text-white hover:text-gray-300 mx-3">
@@ -58,12 +58,7 @@ const Navbar = () => {
           >
             <FaTimes />
           </div>
-          <NavLink
-            to="/"
-            exact
-            onClick={toggleMobileMenu}
-            className="text-white p-2"
-          >
+          <NavLink to="/" onClick={toggleMobileMenu} className="text-white p-2">
             Home
           </NavLink>
           <NavLink
