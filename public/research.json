@@ -1,8 +1,9 @@
 [
   {
     "id": 1,
-    "title": "Project 1",
-    "description": "Description for Project 1",
+    "title": "Reseach 1",
+    "image": "src/assets/images/aboutus.jpg",
+    "description": "Description for Research 1",
     "language": {
       "en": {
         "title": "Project 1",
@@ -16,8 +17,25 @@
   },
   {
     "id": 2,
-    "title": "Project 2",
-    "description": "Description for Project 2",
+    "title": "Research 2",
+    "image": "src/assets/images/aboutus.jpg",
+    "description": "Description for Research 2",
+    "language": {
+      "en": {
+        "title": "Project 2",
+        "description": "Description for Project 2 in English"
+      },
+      "fr": {
+        "title": "Projet 2",
+        "description": "Description du Projet 2 en français"
+      }
+    }
+  },
+  {
+    "id": 3,
+    "title": "Research 3",
+    "image": "src/assets/images/aboutus.jpg",
+    "description": "Description for Research 3",
     "language": {
       "en": {
         "title": "Project 2",
